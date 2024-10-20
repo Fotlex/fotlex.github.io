@@ -1,6 +1,7 @@
 :root {
     --color-green: #76bc21;
     --background-black-opacity: rgb(0, 0, 0, 50%);
+    --color-text: #262626;
 }
 
 .a.link {
@@ -199,3 +200,48 @@ a.link:hover {
         width: 0;
     }
 }
+
+.generalInfo {
+    display: flex;
+}
+
+.generalInfo .left {
+    flex: 1 1 50%;
+    padding-right: 40px;
+}
+
+.generalInfo .right {
+    flex: 1 1 50%;
+}
+
+.generalInfo__image {
+    height: 500;
+    width: 500;
+    margin-left: 20%;
+
+    animation: shadow 5s infinite ease-in-out;
+}
+
+@keyframes shadow {
+    0%, 100% { filter: drop-shadow(0 5px 5px var(--background-black-opacity)); }
+    12.5% { filter: drop-shadow(2px 5px 5px var(--background-black-opacity)); }
+    25% { filter: drop-shadow(5px 5px 5px var(--background-black-opacity)); }
+    37.5% { filter: drop-shadow(5px 2px 5px var(--background-black-opacity)); }
+    50% { filter: drop-shadow(5px -5px 5px var(--background-black-opacity)); }
+    62.5% { filter: drop-shadow(2px -5px 5px var(--background-black-opacity)); }
+    75% { filter: drop-shadow(-5px -5px 5px var(--background-black-opacity)); }
+    87.5% { filter: drop-shadow(-5px -2px 5px var(--background-black-opacity)); }
+}
+
+.generalInfo__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.description-generalInfo {
+    font-size: 1.5em;
+    color: var(--color-text);
+    margin-bottom: 50px;
+}
+
