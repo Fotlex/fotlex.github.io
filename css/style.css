@@ -219,7 +219,7 @@ a.link:hover {
     width: 500;
     margin-left: 20%;
 
-    animation: shadow 5s infinite ease-in-out;
+    animation: shadow 5s infinite linear;
 }
 
 @keyframes shadow {
@@ -294,6 +294,8 @@ a.link:hover {
 
 .interest-title {
     margin-bottom: 15px;
+
+    font-size: 24px;
 
     color: #000;
     font-weight: 700;
