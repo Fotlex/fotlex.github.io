@@ -2,10 +2,14 @@
     --color-green: #76bc21;
     --background-black-opacity: rgb(0, 0, 0, 50%);
     --color-text: #262626;
+
+    --breackpoint-m: 992px;
+    --breackpoint-s: 768px;
 }
 
 .a.link {
     color: var(--color-green);
+    fill: var(--color-green);
     text-decoration: none;
     transition: opacity 0.25s ease;
 }
@@ -79,6 +83,12 @@ a.link:hover {
     width: 24px;
     height: 24px;
 }
+
+
+.menu-hamburger {
+    display: none;
+}
+
 
 .switcher-container {
     width: 260px;
@@ -271,6 +281,8 @@ a.link:hover {
 .hobby__list {
     display: flex;
     flex-wrap: wrap;
+
+    justify-content: space-around;
 }
 
 .hobby-skils__wrapper {    
@@ -282,12 +294,10 @@ a.link:hover {
     padding: 20px;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
 }
-.hobby-skils__wrapper:last-of-type {
-    margin-bottom: 0;
-}
+
 
 .interest-image {
-    width: 200px;
+    width: 65%;
     height: 250px;
     margin-bottom: 20px;
 }
@@ -299,4 +309,30 @@ a.link:hover {
 
     color: #000;
     font-weight: 700;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px, 0;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.social-element__link svg {
+    transform: scale(2); /* Увеличивает размер на 50% */
+}
+
+.social-element:first-of-type {
+    margin-right: 25px;
+}
+
+.social-element {
+    color: var(--color-green);
 }
