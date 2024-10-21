@@ -338,3 +338,7 @@ a.link:hover {
 .social-element {
     color: var(--color-green);
 }
+
+.checkbox {
+    display: none;
+}
